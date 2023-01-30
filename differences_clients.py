@@ -6,7 +6,7 @@ def write_in_file_config(username: str) -> None:
     versions = ['1cv8', '1cv8_x32', '1cv8_x86', '1cv8_x64']
     with open(rf'C:\Users\{username}\AppData\Roaming\1C\1CEStart\1CEStart.cfg', 'w') as file:        
         for ver in versions:
-            Installedlocations = rf'InstalledLocation=C:\Users\{username}\AppData\local\Programs\{ver}' + '\n'
+            Installedlocations = rf'InstalledLocation=C:\Users\{username}\AppData\local\Programs\1C\{ver}' + '\n'
             file.write(Installedlocations)
 
 
